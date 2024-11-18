@@ -1,0 +1,118 @@
+.hero {
+    &__wrapper {
+        text-align: center;
+        position: relative;
+
+        img {
+            border-radius: 24px;
+        }
+    }
+
+    &__title {
+        position: absolute;
+        top: 25%;
+        left: 35%;
+        font-size: 96px;
+        font-weight: 700;
+        line-height: 96px;
+    }
+
+    &__text {
+        position: absolute;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        top: 40%;
+        left: 40%;
+    }
+
+    &__button {
+        position: absolute;
+        top: 48%;
+        left: 45%;
+    }
+
+    &__mobile {
+        display: none;
+    }
+
+    &__btn {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 16px;
+        width: 184px;
+        height: 48px;
+        border-radius: 90px;
+        border: none;
+        color: aliceblue;
+        background: #3b71fe;
+        transition: 0.3s ease;
+    }
+
+    &__btn:hover {
+        background: white;
+        color: black;
+    }
+}
+
+@include mobile() {
+    .hero {
+
+        &__wrapper {
+            margin: 0 auto;
+        }
+
+        &__img {
+            display: none;
+        }
+
+        &__mobile {
+            display: block;
+        }
+    }
+}
+
+@include tablet() {
+    .hero {
+        &__wrapper {
+            margin: 0 auto;
+            position: relative;
+        }
+
+        &__title {
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            font-size: 96px;
+            font-weight: 700;
+            line-height: 96px;
+        }
+
+        &__text {
+            position: absolute;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            top: 45%;
+            left: 33%;
+        }
+
+        &__button {
+            position: absolute;
+            top: 55%;
+            left: 40%;
+        }
+
+        &__btn {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 16px;
+            width: 184px;
+            height: 48px;
+            border-radius: 90px;
+            border: none;
+            color: aliceblue;
+            background: #3b71fe;
+        }
+    }
+}

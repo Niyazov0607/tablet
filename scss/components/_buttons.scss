@@ -1,0 +1,59 @@
+.nav {
+    &__btn {
+        width: 154px;
+        height: 40px;
+        border-radius: 90px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        border: 1px solid #E6E8EC;
+        background: #00000000;
+        transition: 0.3s ease;
+    }
+
+
+    &__btn:hover {
+        color: #777E90;
+    }
+}
+
+.explore {
+
+    &__button {
+        margin-top: 48px;
+        margin-left: 90px;
+    }
+
+    &__btn {
+        width: 163px;
+        height: 48px;
+        border-radius: 90px;
+        border: 1px solid #e6e8ec;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 16px;
+        background: #00000000;
+    }
+}
+
+.footer {
+    &__button {
+        align-items: center;
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 15%;
+            right: 5%;
+        }
+    }
+
+    &__btn {
+        width: 225px;
+        height: 48px;
+        border-radius: 90px;
+        border: 1px solid #E6E8EC;
+        background: #00000000;
+        color: #777E90;
+    }
+}

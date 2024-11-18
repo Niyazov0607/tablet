@@ -1,0 +1,131 @@
+.nav {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 160px;
+        align-items: center;
+    }
+
+    &__logo {
+        align-items: center;
+        display: flex;
+        gap: 81px;
+    }
+
+    &__spn{
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        color: #777e90;
+        transition: 0.3s ease;
+        position: relative;
+
+        &::after {
+            transition: 0.3s ease;
+            content: "";
+            width: 0;
+            height: 1px;
+            background: black;
+            position: absolute;
+            bottom: -10%;
+            left: 1%;
+        }
+
+        &:hover {
+            color: black;
+
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+
+    &__hambur {
+        display: none;
+    }
+
+    &__item {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        color: #777e90;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+    }
+
+    &__list {
+        color: grey;
+        position: relative;
+        
+
+        &::after {
+            transition: 0.3s ease;
+            content: "";
+            width: 0;
+            height: 1px;
+            background: black;
+            position: absolute;
+            bottom: -10%;
+            left: 1%;
+        }
+
+        &:hover {
+            color: black;
+
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@include mobile() {
+    .nav {
+
+        &__wrapper {
+            justify-content: space-between;
+        }
+
+        &__list {
+            display: none;
+        }
+
+        &__hambur {
+            display: block;
+        }
+
+        &__btn {
+            display: none;  
+        }
+
+        &__icon {
+            display: block;
+        }
+
+        &__avatar {
+            display: block;
+        }
+
+        &__spn {
+            display: none;
+        }
+    }
+}
+
+@include tablet() {
+    .nav {
+
+        &__wrapper {
+            justify-content: space-between;
+        }
+
+        &__list {
+            display: none;
+        }
+
+        &__hambur {
+            display: none;
+        }
+    }
+}
